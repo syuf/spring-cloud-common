@@ -2,13 +2,13 @@ package com.zlpay.common.app.hystric;
 
 import org.springframework.stereotype.Component;
 
-import com.zlpay.common.app.ProviderService;
+import com.zlpay.common.app.ProviderAppService;
 import com.zlpay.common.feign.dto.PayDTO;
 import com.zlpay.common.feign.dto.PayResultDTO;
 import com.zlpay.common.feign.enums.RespCodeEnum;
 
 @Component
-public class ProviderHystric implements ProviderService{
+public class ProviderHystric implements ProviderAppService{
 
 	@Override
 	public PayResultDTO pay(PayDTO dto) {

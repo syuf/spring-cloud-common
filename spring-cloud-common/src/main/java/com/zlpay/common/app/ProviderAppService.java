@@ -11,7 +11,7 @@ import com.zlpay.common.feign.dto.PayDTO;
 import com.zlpay.common.feign.dto.PayResultDTO;
 
 @FeignClient(value = "service-provider",fallback = ProviderHystric.class)
-public interface ProviderService {
+public interface ProviderAppService {
 	
 	@RequestMapping(value = "/provider/pay",method = RequestMethod.POST)
 	PayResultDTO pay(@RequestBody PayDTO dto);
